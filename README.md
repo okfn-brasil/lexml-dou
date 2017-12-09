@@ -1,14 +1,22 @@
 # lexml-dou
-Sobsídios para a **Imprensa Nacional** (responsável pelo Diário Oficial da União - DOU) e o **LexML** (padrões ePING LexML) estabelecerem consensos, norteados pelas demandas fixadas no projeto "Atos.Gov" da **Casa Civil**.
+Sobsídios para a **Imprensa Nacional** (responsável pelo Diário Oficial da União - DOU) e o **LexML** (padrões ePING LexML) estabelecerem consensos, norteados pelas diretivas e demandas fixadas na iniciativa "Atos.Gov" da **Casa Civil**.
 
-Repositório aberto para **consulta pública**  mediada pela Open Knowledge Brasil.
+Repositório aberto para **consulta pública**, mediada pela Open Knowledge Brasil.
 
 ## Apresentação dos problemas
 
 > **As pessoas não conseguem encontrar normas do Governo federal na internet**. A
 frase anterior, por mais impactante que possa ser, expressa uma realidade atual (...) encontrar atos administrativos na internet, situação absurda e inaceitável.  (...) em torno de 400 normas por ano, ao passo que são produzidas aproximadamente 1.500 normas de hierarquia inferior por dia, tais como portarias, instruções normativas e resoluções, assinadas por diversas autoridades nos 27 ministérios e em suas 159 autarquias e fundações. A disponibilização dessas milhares de normas diárias na internet é gerenciada por cada órgão ou entidade, individualmente, sem padronização nem tampouco garantia de conteúdos ou atualização de vigência. Há, porém, um órgão federal que desde 1808 garante, por meio da publicidade oficial gerada pelo Diário Oficial da União, que as normas produzam seus efeitos jurídicos, sendo o guardião de todo o acervo normativo federal: a Imprensa Nacional.<br/>[Casa Civil, iniciativa Atos.gov](subsidios/PaperAtosGov.pdf)
 
-Além deste problema principal, diversos problemas secundários e subproblemas do principal podem ser enumerados: ...
+Além deste problema principal, diversos problemas secundários e subproblemas do principal podem ser enumerados: 
+
+1. Documentos individualizados: problema solucionado no HTML, mas ainda não no PDF (ou EPUB). 
+
+2. Documentos identificados de forma única e transparente: as normas LexML requerem uso da [URN LEX](https://pt.wikipedia.org/wiki/Lex_(URN)), por hora tem-se apenas o ID da matéria, que também deve ser mantido.
+
+3. Documentos em HTML5 estruturado, tendo seus  *elementos essenciais* devidamente destacados: existem interseções entre as considerações do DOU relativas a "elementos essenciais" e as considerações do LexML para a formação da URN LEX a partir de metadados explícitos do conteúdo &mdash; presentes no conteúdo auditado pelo público.
+
+4. ...
 
 ## Soluções já consolidadas
 ...
@@ -30,10 +38,10 @@ Além deste problema principal, diversos problemas secundários e subproblemas d
 
 **Level 1**: requer estruturação controlada, uso rigoroso das marcações semânticas do [HTML5](https://github.com/okfn-brasil/HTML5-onlyContent) e adaptação do atributo *class* (CSS) do DOU de dezembro de 2017 para fins de controle semântico adicional, no mesmo espirito que [Microformat](https://en.wikipedia.org/wiki/Microformat).
 
-* [proposta01-caso01](propostas/level1/proposta01-caso01.md)
+* [**proposta01-caso01**](propostas/level1/proposta01-caso01.md)
 * ...
 
 **Level 2**: uso rigoroso das marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent), e adaptação do DOU de dezembro de 2017 para ilustrar a marcação adicional, com RDF expresso em  [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)), e metadados residuais class-microformat.
 
-* [proposta02-caso01](propostas/level2/proposta02-caso01.md)
+* [**proposta02-caso01**](propostas/level2/proposta02-caso01.md)
 * ...
