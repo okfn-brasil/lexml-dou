@@ -1,5 +1,7 @@
 # lexml-dou
-Sobsídios para a Imprensa Nacional (responsável pelo Diário Oficial da União - DOU) e o LexML (padrões ePING LexML), norteados pelas demandas fixadas no projeto "Atos.Gov" da Casa Civil.
+Sobsídios para a **Imprensa Nacional** (responsável pelo Diário Oficial da União - DOU) e o **LexML** (padrões ePING LexML) estabelecerem consensos, norteados pelas demandas fixadas no projeto "Atos.Gov" da **Casa Civil**.
+
+Repositório aberto para **consulta pública**  mediada pela Open Knowledge Brasil.
 
 ## Apresentação dos problemas
 
@@ -15,9 +17,9 @@ Além deste problema principal, diversos problemas secundários e subproblemas d
 
 ... Importante que os exemplos de referência (casos de uso) sejam listados e todas as propostas de solução façam uso dos mesmos para poderem ser comparadas, e para faciliar a sua análise...
 
-* Caso01: um exemplo de portaria simples (poucos parágrafos e nenhuma estrutura).  <br/>Judisdição: federal; Autoridade: Ministério das Relações Exteriores / Gabinete do Ministro; TipoDocumento: portaria.  Documento: PORTARIA DE 29 DE NOVEMBRO DE 2017](http://portal.imprensanacional.gov.br/todas?p_p_id=101&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_101_struts_action=%2Fasset_publisher%2Fview_content&_101_type=content&_101_viewMode=view&_101_groupId=68942&_101_urlTitle=portaria-de-29-de-novembro-de-2017).
+* **Caso01**: um exemplo de portaria simples (poucos parágrafos e nenhuma estrutura).  <br/>Judisdição: federal; Autoridade: Ministério das Relações Exteriores / Gabinete do Ministro; TipoDocumento: portaria.  Documento: [PORTARIA DE 29 DE NOVEMBRO DE 2017](http://portal.imprensanacional.gov.br/todas?p_p_id=101&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_101_struts_action=%2Fasset_publisher%2Fview_content&_101_type=content&_101_viewMode=view&_101_groupId=68942&_101_urlTitle=portaria-de-29-de-novembro-de-2017).
 
-* Caso02: ...
+* **Caso02**: ...
 
 ## Propostas de solução, em discussão neste git
 ...
