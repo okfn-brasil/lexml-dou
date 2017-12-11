@@ -1,8 +1,8 @@
 ## Proposta01, exemplificando através do Caso01
 
-Meta: **Level 2**.
+Meta: **Nível 2**.   Ilustrado por [Caso01](../../casos/caso01.md).
 
-**Resumo da porposta**: uso rigoroso das marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent), e adaptação das classes-CSS do DOU de dezembro de 2017 para ilustrar a marcação adicional, no mesmo espirito que [Microformat](https://en.wikipedia.org/wiki/Microformat).
+**Resumo da porposta**: uso rigoroso das tags e marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent), e controle do atributo `class` (CSS), do DOU de dezembro de 2017, para ilustrar a marcação adicional, no mesmo espirito que [Microformat](https://en.wikipedia.org/wiki/Microformat).
 
 **Código**:
 ```html
