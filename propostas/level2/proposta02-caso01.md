@@ -1,9 +1,9 @@
 
 ## Proposta02, exemplificando através do Caso01
 
-Meta: **Level 3**.
+Meta: **Level 2**. Ilustrado por [Caso01](../../casos/caso01.md).
 
-**Resumo da porposta**: uso rigoroso das marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent), e adaptação do DOU de dezembro de 2017 para ilustrar a marcação adicional, com RDF expresso em  [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)), e metadados residuais class-microformat.
+**Resumo da porposta**: uso rigoroso das tags e marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent/blob/master/spec.md), e adaptação do DOU de dezembro de 2017 para ilustrar a marcação adicional, com [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) expresso em  [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)), e metadados residuais via controle do atributo `class` (CSS) de maneira similar ao [Microformat](https://en.wikipedia.org/wiki/Microformat).
 
 **Código**:
 ```html
