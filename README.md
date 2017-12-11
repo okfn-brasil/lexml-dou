@@ -18,10 +18,24 @@ Além deste problema principal, diversos problemas secundários e subproblemas d
 
 4. ...
 
+## Princípios e propostas principais
+
+Não existe uma solução simples e direta, a implantação precisa ser gradual, e o custo ou mesmo viabilidade de implantação da solução envolve um contexto amplo que será aqui apelidado de "informátização do setor".  Quanto maior o [nível  de maturidade](https://en.wikipedia.org/wiki/Capability_Maturity_Model) na informaização, maiores as chances de sucesso na implantação, e maior a viabilidade de uma solução complexa. Elegemos então 4 níveis de maturidade:
+
+* **Nível zero**: quando o contexto não está muito preparado mais existe boa vontade para começar, e as adaptações básicas são realizadas... Um grande salto como começar a produzir o HTML além do PDF. A DTD resultante é apelidada de `HTML-free`.
+
+* **Nível 1**: o template dos documentos HTML pode ser controlado, de modo que tags HTML5 e atributos `class`  controlados podem ser empregados de maneira mais padronizada.  A DTD resultante é apelidada de `HTML5-lex1`.
+
+* **Nível 2**: além do template controlado, a comunidade estabelece consensos, e adopta taambém marcação semântica nos metadados.  A DTD resultante é apelidada de `HTML5-lex2`.
+
+* **Nível 3**: o HTML inteiro é padronizado, com tags semanticas e marcações adicionais de grão-fino (ex. destaque labels, identificação das partes, etc.).  A DTD resultante é apelidada de `HTML5-lex3`.
+
+Acima do nível 3 temos a opção do XML, caso a DTD `HTML5-lex3` não possa ser mapeada (XSLT) para o [XML-LexML](http://projeto.lexml.gov.br/documentacao/Parte-3-XML-Schema.pdf). É previsto, de qualquer modo, que além do nível haja o versionamento, prevendo correções e aperfeiçoamentos futuros (ex. `HTML5-lex2v2.1` poderia ser um rótulo de DTD).
+
 ## Soluções já consolidadas
 ...
 
-## Demais soluções, organizando
+## Organizando soluções através de exemplos
 
 ... Importante que os exemplos de referência (casos de uso) sejam listados e todas as propostas de solução façam uso dos mesmos para poderem ser comparadas, e para faciliar a sua análise...
 
