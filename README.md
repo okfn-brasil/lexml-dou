@@ -8,9 +8,9 @@ Repositório aberto para **consulta pública**, mediada pela Open Knowledge Bras
 > **As pessoas não conseguem encontrar normas do Governo federal na internet**. A
 frase anterior, por mais impactante que possa ser, expressa uma realidade atual (...) encontrar atos administrativos na internet, situação absurda e inaceitável.  (...) em torno de 400 normas por ano, ao passo que são produzidas aproximadamente 1.500 normas de hierarquia inferior por dia, tais como portarias, instruções normativas e resoluções, assinadas por diversas autoridades nos 27 ministérios e em suas 159 autarquias e fundações. A disponibilização dessas milhares de normas diárias na internet é gerenciada por cada órgão ou entidade, individualmente, sem padronização nem tampouco garantia de conteúdos ou atualização de vigência. Há, porém, um órgão federal que desde 1808 garante, por meio da publicidade oficial gerada pelo Diário Oficial da União, que as normas produzam seus efeitos jurídicos, sendo o guardião de todo o acervo normativo federal: a Imprensa Nacional.<br/>[Casa Civil, iniciativa Atos.gov](subsidios/PaperAtosGov.pdf)
 
-Além deste problema principal, diversos problemas secundários e subproblemas do principal podem ser enumerados: 
+Além deste problema principal, diversos problemas secundários e subproblemas do principal podem ser enumerados:
 
-1. Documentos individualizados: problema solucionado no HTML, mas ainda não no PDF (ou EPUB). 
+1. Documentos individualizados: problema solucionado no HTML, mas ainda não no PDF (ou EPUB).
 
 2. Documentos identificados de forma única e transparente: as normas LexML requerem uso da [URN LEX](https://pt.wikipedia.org/wiki/Lex_(URN)), por hora tem-se apenas o ID da matéria, que também deve ser mantido.
 
@@ -25,9 +25,9 @@ Além deste problema principal, diversos problemas secundários e subproblemas d
 
 ... Importante que os exemplos de referência (casos de uso) sejam listados e todas as propostas de solução façam uso dos mesmos para poderem ser comparadas, e para faciliar a sua análise...
 
-* **Caso01**: um exemplo de portaria simples (poucos parágrafos e nenhuma estrutura).  <br/>Judisdição: federal; Autoridade: Ministério das Relações Exteriores / Gabinete do Ministro; TipoDocumento: portaria.  Documento: [PORTARIA DE 29 DE NOVEMBRO DE 2017](http://portal.imprensanacional.gov.br/todas?p_p_id=101&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&_101_struts_action=%2Fasset_publisher%2Fview_content&_101_type=content&_101_viewMode=view&_101_groupId=68942&_101_urlTitle=portaria-de-29-de-novembro-de-2017).
+* [**Caso01**](casos/caso01.md): um exemplo de portaria simples (poucos parágrafos e nenhuma estrutura).  <br/>Judisdição: federal; Autoridade: Ministério das Relações Exteriores / Gabinete do Ministro; TipoDocumento: portaria.  
 
-* **Caso02**: ...
+* [**Caso02**](casos/caso02.md): um exemplo de lei simples (poucos parágrafos e só articulação)<br/> Judisdição: federal; Autoridade: Atos do Congresso Nacional; TipoDocumento: Decreto Legislativo.
 
 ## Propostas de solução, em discussão neste git
 ...

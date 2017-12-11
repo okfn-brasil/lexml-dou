@@ -7,17 +7,20 @@ Meta: **Level 3**.
 
 **Código**:
 ```html
-<article itemscope itemprop="Legislation" itemtype="http://pending.schema.org/Legislation">
+<article itemscope itemprop="Legislation" itemtype="http://schema.org/Legislation" xml:lang="pt-br">
   <nav class="detalhes-dou">
-    <p itemscope itemtype="http://schema.org/PublicationIssue">
-      Publicado em: <span itemprop="dateCreated">30/11/2017</span>
-      | Edição e seção: <span itemprop="issueNumber">229, sec. 2</span>
-      | Página: <span itemprop="pageStart">66</span>
+    <p itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationIssue">
+      Publicado em: <time itemprop="dateCreated" datetime="2017-11-30">30/11/2017</time>
+      | <span itemprop="issueNumber">
+        Edição: <span itemprop="identifier">229</span><!-- ID -->
+      | Seção:  <span>2</span><!-- itemprop="hasPart" =sub-ID... ou "isPartOf" =super-local?  -->
+      </span>
+      | Página: <span itemprop="pageStart">66</span><!-- local -->
     </p>
     <p class="linha-pipes">
-     <span itemprop="legislationJurisdiction">Esfera federal</span>
-     | <span itemprop="legislationPassedBy">Ministério das Relações Exteriores / Gabinete do Ministro</span>
-     | <span itemprop="legislationType">Portaria</span>
+     <span itemprop="legislationJurisdiction" value="br">Esfera federal</span>
+     | <span itemprop="legislationPassedBy">Ministério das Relações Exteriores / Gabinete do Ministro</span><!-- CategoryCode? apontando vocabulario-->
+     | <span itemprop="legislationType">Portaria</span><!-- http://pending.schema.org/CategoryCode  apontando para voc. LexML -->
     </p>
   </nav>
 
