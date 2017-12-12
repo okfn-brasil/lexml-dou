@@ -20,7 +20,7 @@ Além deste problema principal, diversos problemas secundários e subproblemas d
 
 ## Princípios e propostas principais
 
-Não existe uma solução simples e direta, a implantação precisa ser gradual, e o custo ou mesmo viabilidade de implantação da solução envolve um contexto amplo que será aqui apelidado de "informátização do setor".  Quanto maior o [nível  de maturidade](https://en.wikipedia.org/wiki/Capability_Maturity_Model) na informaização, maiores as chances de sucesso na implantação, e maior a viabilidade de uma solução complexa. Elegemos então 4 níveis de maturidade:
+Não existe uma solução simples e direta, a implantação precisa ser gradual, e o custo ou mesmo viabilidade de implantação da solução envolve um contexto amplo que será aqui apelidado de "informátização do setor".  Quanto maior o [nível  de maturidade](https://en.wikipedia.org/wiki/Capability_Maturity_Model) na informatização, maiores as chances de sucesso na implantação, e maior a viabilidade de uma solução complexa. Elegemos então 4 níveis de maturidade:
 
 * **Nível zero**: quando o contexto não está muito preparado mais existe boa vontade para começar, e as adaptações básicas são realizadas... Um grande salto como começar a produzir o HTML além do PDF. A DTD resultante é apelidada de `HTML-free`.
 
@@ -60,7 +60,7 @@ Acima do nível 3 temos a opção do XML, caso a DTD `HTML5-lex3` não possa ser
 
 * ...
 
-**Nível 2**: uso rigoroso das marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent), e adaptação do DOU de dezembro de 2017 para ilustrar a marcação adicional, com RDF expresso em  [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)), e metadados residuais class-microformat.
+**Nível 2**: uso rigoroso das marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent), e adaptação do DOU de dezembro de 2017 para ilustrar a marcação adicional, com [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) expresso em  **[Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML))**, e metadados residuais class-microformat.
 
 * [**proposta2_01-ok-caso01**](propostas/nivel2/proposta2_01-ok-caso01.md)
 * ...
