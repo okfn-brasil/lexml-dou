@@ -46,16 +46,21 @@ Acima do nível 3 temos a opção do XML, caso a DTD `HTML5-lex3` não possa ser
 ## Propostas de solução, em discussão neste git
 ...
 
-**Level 0**: basta estar em HTML minimamente estruturado, uma matéria por página-web. Ver HTML em uso no DOU em 2017-12-07.
+**Nível 0**: basta estar em HTML minimamente estruturado, uma matéria por página-web.
+
+* [**proposta0_01-dou-caso01.md**](propostas/nivel0/proposta0_01-dou-caso01.md). Ver HTML em uso no DOU em 2017-12-07.
+* [**proposta0_02-dou-caso02.md**](propostas/nivel0/proposta0_02-dou-caso02.md). Idem.
+* [**proposta0_03-dou-caso03.md**](propostas/nivel0/proposta0_03-dou-caso03.md). Idem.
+* [**proposta0_04-ccv-caso03.md**](propostas/nivel0/proposta0_04-ccv-caso03.md). Ver HTML da Casa Civil.
+
+
+**Nível 1**: requer estruturação controlada, uso rigoroso das marcações semânticas do [HTML5](https://github.com/okfn-brasil/HTML5-onlyContent) e adaptação do atributo *class* (CSS) do DOU de dezembro de 2017 para fins de controle semântico adicional, no mesmo espirito que [Microformat](https://en.wikipedia.org/wiki/Microformat).
+
+* [**proposta01-caso01**](propostas/nivel1/proposta1_01-caso01.md)
 
 * ...
 
-**Level 1**: requer estruturação controlada, uso rigoroso das marcações semânticas do [HTML5](https://github.com/okfn-brasil/HTML5-onlyContent) e adaptação do atributo *class* (CSS) do DOU de dezembro de 2017 para fins de controle semântico adicional, no mesmo espirito que [Microformat](https://en.wikipedia.org/wiki/Microformat).
+**Nível 2**: uso rigoroso das marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent), e adaptação do DOU de dezembro de 2017 para ilustrar a marcação adicional, com RDF expresso em  [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)), e metadados residuais class-microformat.
 
-* [**proposta01-caso01**](propostas/level1/proposta01-caso01.md)
-* ...
-
-**Level 2**: uso rigoroso das marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent), e adaptação do DOU de dezembro de 2017 para ilustrar a marcação adicional, com RDF expresso em  [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)), e metadados residuais class-microformat.
-
-* [**proposta02-caso01**](propostas/level2/proposta02-caso01.md)
+* [**proposta2_01-ok-caso01**](propostas/nivel2/proposta2_01-ok-caso01.md)
 * ...
