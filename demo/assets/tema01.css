@@ -1,0 +1,59 @@
+
+body > div {
+  background-color: #FCD;
+}
+
+div > article {
+	padding: 30pt;
+	margin: 30pt;
+	
+}
+
+article  {
+  font-size:12pt;
+  font-family:"Times New Roman";
+  background-color: #FFF;
+}
+
+article nav {
+  text-align: center;
+  background-color: #CCC;
+
+}
+
+header, footer {
+  padding-top:    3em;
+  padding-bottom: 3em;
+}
+h1,h2,h3,h4 {
+  font-family: Arial;
+}
+
+header h1 {
+  text-align: center;
+  font-size:18pt;
+  background-color: #CEC;
+}
+
+section {
+  padding-top:    1em;
+}
+
+section h1 {
+  font-size:17pt;
+  background-color: #ECE;
+}
+section h2 {
+  font-size:15pt;
+}
+section h3 {
+  font-size:13pt;
+}
+div.art{padding: 0; margin:0;}
+
+p.art>label, p.par>label,
+h1>label, h2>label, h3>label,
+section.preamble h2 {
+  color:#555;
+  font-weight: bold;
+}
