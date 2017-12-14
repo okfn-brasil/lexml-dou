@@ -3,23 +3,38 @@ body > div {
   background-color: #FCD;
 }
 
+body > div > blockquote {
+	font-size: 80%;
+}
+
 div > article {
 	padding: 30pt;
 	margin: 30pt;
-	
+
 }
 
 article  {
-  font-size:12pt;
+  font-size:13pt;
   font-family:"Times New Roman";
   background-color: #FFF;
 }
 
 article nav {
+  width: 90%;
   text-align: center;
-  background-color: #CCC;
-
+  background-color: #DDD;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
 }
+article nav p {
+   padding:0; margin:3pt;
+}
+
+article nav p label {
+   color: #534;
+   font-family:Arial;
+}
+
 
 header, footer {
   padding-top:    3em;
@@ -54,6 +69,6 @@ div.art{padding: 0; margin:0;}
 p.art>label, p.par>label,
 h1>label, h2>label, h3>label,
 section.preamble h2 {
-  color:#555;
+  color:#445;
   font-weight: bold;
 }
