@@ -21,6 +21,7 @@ article  {
 
 article nav {
   width: 90%;
+  margin: 0 auto; /* to centerable */
   text-align: center;
   background-color: #DDD;
   padding-top: 10pt;
