@@ -21,7 +21,7 @@ article  {
 
 article nav {
   width: 90%;
-  margin: 0 auto; /* to centerable */
+  margin: 0 auto; /* to align */
   text-align: center;
   background-color: #DDD;
   padding-top: 10pt;
@@ -36,11 +36,24 @@ article nav p label {
    font-family:Arial;
 }
 
-
-header, footer {
-  padding-top:    3em;
-  padding-bottom: 3em;
+article header .Ementa {
+  width:80%;
+  margin: 0 auto; /* to align */
+  text-align: right;
+  font-style: italic; /* melhor mudar de cor do que italicos*/
 }
+
+article header, article footer {
+  padding-top:    2em;
+  padding-bottom: 2em;
+}
+article footer {
+  text-align: center;
+}
+article footer .rodape {
+  text-align: left;
+}
+
 h1,h2,h3,h4 {
   font-family: Arial;
 }

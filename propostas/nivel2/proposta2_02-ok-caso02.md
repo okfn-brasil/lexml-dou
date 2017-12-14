@@ -1,15 +1,15 @@
 
 ## Proposta 2.02, exemplificando através do Caso02
 
-Meta: **Nível 2**. Ilustrado por [Caso02](../../casos/caso02.md).
+Meta: **Nível 2**. Ilustrado por [Caso02](../../casos/caso02.md) e  [demo](https://okfn-brasil.github.io/lexml-dou/demo/prop2_02.html).
 
 **Resumo da porposta**: uso rigoroso das tags e marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent/blob/master/spec.md), com [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) expresso em  [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)), e  semântica estrutural resisual com atributo `class` (CSS) de maneira similar ao [Microformat](https://en.wikipedia.org/wiki/Microformat).
 
 **Código**:
 ```html
-<article itemscope itemprop="Legislation" itemtype="http://schema.org/Legislation" xml:lang="pt-br">
+<article id="oficial" itemscope itemprop="Legislation" itemtype="http://schema.org/Legislation" xml:lang="pt-br">
 
-  <nav class="detalhes-dou">
+  <nav class="content-metadata"><!-- Metadados -->
     <p itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationIssue">
       <label>Publicado em</label>: <time itemprop="dateCreated" datetime="2017-12-05">05/12/2017</time>
       | <span itemprop="issueNumber">
@@ -21,23 +21,26 @@ Meta: **Nível 2**. Ilustrado por [Caso02](../../casos/caso02.md).
     </p>
     <p class="linha-pipes">
      <span value="br"><label>Esfera</label> federal</span><!--  itemprop="legislationJurisdiction" -->
-     | <label>Autoridade emitente:</label> <span itemprop="legislationPassedBy">Atos do Congresso Nacional</span>
+     | <label>Autoridade/Subseção:</label> <span itemprop="legislationPassedBy">Atos do Congresso Nacional</span>
     </p>
   </nav>
 
-  <header class="ParteInicial">
-    <h3 itemprop="http://schema.org/name">
+
+  <header class="ParteInicial" id="inicio">
+    <p class="par Preambulo"> Faço saber que o Congresso Nacional aprovou, e eu, Eunício Oliveira,
+        Presidente do Senado Federal, nos termos do parágrafo único do art. 52 do Regimento Comum e
+        do inciso XXVIII do art. 48 do Regimento Interno do Senado Federal, promulgo o seguinte</p>
+
+    <h2 class="Epigrafe" itemprop="http://schema.org/name">
       <label itemprop="legislationType">DECRETO LEGISLATIVO</label>
       <span>Nº 173</span>, DE <time>2017</time><sup><a href="#foot1">(*)</a></sup>
-    </h3>
-    <p  itemprop="description" class="ementa-dou">Aprova o texto do Acordo Complementar de Revisão do Convênio de Seguridade
+    </h2>
+
+    <p class="Ementa" itemprop="description">Aprova o texto do Acordo Complementar de Revisão do Convênio de Seguridade
      Social firmado entre a República Federativa do Brasil e o Reino da Espanha, assinado em Madri,
      em 24 de julho de 2012.</p>
 
-    <p class="dou-paragraph"> Faço saber que o Congresso Nacional aprovou, e eu, Eunício Oliveira,
-        Presidente do Senado Federal, nos termos do parágrafo único do art. 52 do Regimento Comum e
-        do inciso XXVIII do art. 48 do Regimento Interno do Senado Federal, promulgo o seguinte</p>
-    <p class="dou-paragraph" >O Congresso Nacional decreta:</p>
+    <p class="par Preambulo">O Congresso Nacional decreta:</p>
   </header>
 
   <div id="art1" class="art">
@@ -54,16 +57,14 @@ Meta: **Nível 2**. Ilustrado por [Caso02](../../casos/caso02.md).
   <p id="art2" class="art"><label>Art. 2º</label> – Este Decreto Legislativo entra em vigor na data de sua
      publicação.</p>
 
-  <footer class="ParteFinal">
-    <p class="dou-paragraph">O texto do Acordo acima citado está publicado no Diário do Senado
-       Federal de 17/10/2017.</p>
-    <div itemprop="legislationResponsible" itemscope itemtype="http://schema.org/Person">
+  <footer id="fecho" class="ParteFinal">
+    <div class="Assinatura" itemprop="legislationResponsible" itemscope itemtype="http://schema.org/Person">
       <p itemprop="name" class="assina-dou">Senador EUNÍCIO OLIVEIRA</p>
       <p itemprop="memberOf" class="cargo-dou">Presidente do Senado Federal</p>
     </div>
     <div class="rodape" itemscope itemtype="http://schema.org/WPFooter">
       <hr/>
-      <p id="foot1" itemprop="about"><label>(*)</label> O texto do Protocolo acima citado está publicado no Diário do Senado Federal de 14/11/2017.</p>
+      <p id="foot1" itemprop="about"><label>(*)</label> O texto do Protocolo acima citado está publicado no <a href="http://legis.senado.leg.br/diarios/BuscaDiario?tipDiario=1&datDiario=17/10/2017&paginaDireta=38">Diário do Senado Federal de 17/10/2017</a>.</p>
     </div>
   </footer>
 </article>
