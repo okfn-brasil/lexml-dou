@@ -31,7 +31,7 @@ Meta: **Nível 2**. Ilustrado por [Caso02](../../casos/caso02.md).
       <label itemprop="legislationType">DECRETO LEGISLATIVO</label> 
       <span>Nº 173</span>, DE <time>2017</time><sup><a href="#foot1">(*)</a></sup>
     </h3>
-    <p class="ementa-dou">Aprova o texto do Acordo Complementar de Revisão do Convênio de Seguridade
+    <p  itemprop="about" class="ementa-dou">Aprova o texto do Acordo Complementar de Revisão do Convênio de Seguridade
      Social firmado entre a República Federativa do Brasil e o Reino da Espanha, assinado em Madri,
      em 24 de julho de 2012.</p>
 
@@ -42,7 +42,7 @@ Meta: **Nível 2**. Ilustrado por [Caso02](../../casos/caso02.md).
   </header>
 
   <div id="art1" class="art"> 
-    <p class="art caput"><label>Art. 1º</label> Fica aprovado o texto do Acordo Complementar de Revisão do
+    <p class="art caput"><label>Art. 1º</label> – Fica aprovado o texto do Acordo Complementar de Revisão do
      Convênio de Seguridade Social firmado entre a República Federativa do Brasil e o Reino da
       Espanha, assinado em Madri, em 24 de julho de 2012. </p>
 
@@ -52,7 +52,7 @@ Meta: **Nível 2**. Ilustrado por [Caso02](../../casos/caso02.md).
      encargos ou compromissos gravosos ao patrimônio nacional. </p>
   </div>
 
-  <p class="art"><label>Art. 2º</label> Este Decreto Legislativo entra em vigor na data de sua
+  <p class="art"><label>Art. 2º</label> – Este Decreto Legislativo entra em vigor na data de sua
      publicação.</p>
 
   <footer class="ParteFinal">
