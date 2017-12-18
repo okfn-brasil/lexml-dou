@@ -1,0 +1,153 @@
+
+body > div {
+  background-color: #FCD;
+}
+
+body > div > blockquote {
+	font-size: 80%;
+}
+
+div > article {
+	padding: 30pt;
+	margin: 30pt;
+
+}
+
+
+/* ##### */
+article  {
+  font-size:13pt;
+  font-family:"Times New Roman";
+  background-color: #FFF;
+}
+
+
+/* ## nav ## */
+
+article nav {
+  width: 90%;
+  margin: 0 auto; /* to align */
+  text-align: center;
+  background-color: #DDD;
+  padding-top: 10pt;
+  padding-bottom: 10pt;
+}
+article nav p {
+   padding:0; margin:3pt;
+}
+
+article nav p label {
+   color: #534;
+   font-family:Arial;
+}
+
+/* etc */
+
+article header .Ementa {
+  width:80%;
+  margin: 0 auto; /* to align */
+  text-align: right;
+  font-style: italic; /* melhor mudar de cor do que italicos*/
+}
+article header,
+article footer {
+  padding-top:    2em;
+  padding-bottom: 2em;
+}
+article footer {  /* * elements right; */
+  text-align: center;
+}
+article footer .rodape {
+  text-align: left;
+}
+
+/* ## auditable-metadata in a DL list ## */
+
+nav.auditable-metadata dl {margin: 0; padding: 0}
+
+nav.auditable-metadata dt,
+nav.auditable-metadata dd { display: inline; }
+
+nav.auditable-metadata dt:after { content: ":"; }
+
+dl.sepByPipes dt:not(:first-child):before  { content: "| "; }
+
+nav.auditable-metadata dd {margin:0; padding-right:4pt; font-family: Arial;}
+nav.auditable-metadata dt {margin:0; color:#333;}
+
+
+/* FRONT BLOCK */
+
+header {
+  padding-top:    3em;
+  padding-bottom: 3em;
+}
+h1,h2,h3,h4 {
+  font-family: Arial;
+}
+
+header {  text-align: center;}
+header h1 {
+  font-size:18pt;
+  background-color: #E9E9E9;
+}
+
+header .ementa {
+	color: #444;
+}
+
+/* BODY BLOCK */
+
+
+section {
+  padding-top:    1em;
+}
+
+section h1 {
+  font-size:17pt;
+  background-color: #E9E9E9;
+}
+section h2 {
+  font-size:15pt;
+  background-color: #E9E9E9;
+}
+section h3 {
+  font-size:13pt;
+}
+
+div.par {
+	padding: 0;
+	margin:  0;
+}
+
+p.art { padding-top: 5pt; }
+div.art {
+	padding: 5pt 0 0; /* top */
+	margin:0;
+}
+
+
+div.art p.caput label:first-child,
+div.par p.caput label:first-child,
+p.art label:first-child,
+p.par label:first-child,
+p.item label:first-child,
+h1>label:first-child, h2>label:first-child, h3>label:first-child,
+section.preamble h2 {
+  color:#611;
+  font-weight: bold;
+}
+
+div.art>p.item {padding-left: 10pt;}
+
+div.par>p.item {padding-left: 18pt;}
+
+
+/* BACK BLOCK (footer) */
+
+
+p.local_data {
+	padding-bottom: 15pt;
+}
+
+p.ass { font-style: italic; }

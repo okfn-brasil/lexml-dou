@@ -1,16 +1,34 @@
+<html lang="pt-br">
 
-## Proposta02, exemplificando através do Caso01
+<head>
+  <meta charset="utf-8"/>
+  <title>Dec Leg 173</title>
+  <meta name="dtd" content="html5-lex3"/>
+  <link href="assets/tema02.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
 
-Meta: **Level 2**. Ilustrado por [Caso01](../../casos/caso01.md).
+<body>
 
-**Resumo da porposta**: uso rigoroso das tags e marcações semânticas do [HTML5-onlyContent](https://github.com/okfn-brasil/HTML5-onlyContent/blob/master/spec.md), e adaptação do DOU de dezembro de 2017 para ilustrar a marcação adicional, com [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) expresso em  [Microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)), e metadados residuais via controle do atributo `class` (CSS) de maneira similar ao [Microformat](https://en.wikipedia.org/wiki/Microformat).
+<div class="do-envelope"> <!-- template-frame -->
+<p>Ilustrando <a href="https://github.com/okfn-brasil/lexml-dou/blob/master/propostas/nivel2/proposta2_01-ok-caso01.md">proposta2_01</a>.
+  <br/>Área rosa: simula um <i>template frame</i>, que encapsula a matéria sem interferir na mesma (descartável). Idealmente não usar.
+  <br/>Área branca:  conteúdo oficial, com bloco cinza de metadados complementares.
+  <br/>Instruções para testar os metadados explícitos no conteúdo oficial e no bloco complementar:
+<blockquote>
+    1. Copie a URL deste página.
+    <br/>2. Abra uma nova aba com a <b><a href="https://search.google.com/structured-data/testing-tool">ferramenta de teste semântico</a></b>
+    <br/>3. Lá na  ferranta cole a URL.
+    <br/>4. Confira principalmente o bloco de "Legislation".
+</blockquote>
+<br/>Instruções para ver o código-fonte:
+<blockquote>
+    1. use <tt>^U</tt> no teclado ou use o menu <i>Ferramentas/Código-fonte</i>
+    <br/>2. procure pela tag <code>article</code>, o conteúdo oficial (o restante será descartado).
+</blockquote>
+</p>
 
-**Decisão pendente**: por ser uma portaria relativa a *ato executivo*, a rigor, não é compativel com a semântica de `Legislation`, mas comparativamente a outras opções do SchemaOrg, seria apenas uma flexibilização. A alternativa como CreativeWork ou [TextDigitalDocument](http://schema.org/TextDigitalDocument) também é viável, mas requer revisão de atributos típicos como `legislationPassedBy` (autoridade emitente), que flexibilizado como `GovernmentService`.
 
-Decisão em uso:  enquanto não temos algo melhor, optando por deixar todas as matérias de "atos oficiais" como `Legislation`, flexibilizado para comportar demais poderes (não-legislativos).
 
-**Código**:
-```html
 <article itemscope itemprop="Legislation" itemtype="http://schema.org/Legislation" xml:lang="pt-br">
 
   <nav class="auditable-metadata"><!-- Metadados auditáveis-->
@@ -46,4 +64,11 @@ Decisão em uso:  enquanto não temos algo melhor, optando por deixar todas as m
   </footer>
 
 </article>
-```
+
+
+... Aqui fora, em rosa, será tudo descartado, pode ter mais alguma coisa do "template frame".
+
+</div><!-- template-frame-->
+
+</body>
+</html>

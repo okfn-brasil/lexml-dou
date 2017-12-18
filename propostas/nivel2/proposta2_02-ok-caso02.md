@@ -9,29 +9,33 @@ Meta: **Nível 2**. Ilustrado por [Caso02](../../casos/caso02.md) e  [demo](http
 ```html
 <article id="oficial" itemscope itemprop="Legislation" itemtype="http://schema.org/Legislation" xml:lang="pt-br">
 
-  <nav class="content-metadata"><!-- Metadados -->
-    <p itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationIssue">
-      <label>Publicado em</label>: <time itemprop="dateCreated" datetime="2017-12-05">05/12/2017</time>
-      | <span itemprop="issueNumber">
-        <label>Edição</label>: <span itemprop="identifier">229</span>
-      | <label>Seção</label>:  <span>1</span>
-      </span>
-      | <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/12/2017&amp;jornal=515&amp;pagina=2"><label>Página</label>:
-          <span itemprop="pageStart">2</span></a>
-    </p>
-    <p class="linha-pipes">
-     <span value="br"><label>Esfera</label> federal</span><!--  itemprop="legislationJurisdiction" -->
-     | <label>Autoridade/Subseção:</label> <span itemprop="legislationPassedBy">Atos do Congresso Nacional</span>
-    </p>
+  <nav class="auditable-metadata"><!-- Metadados auditáveis-->
+    <dl itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationIssue" class="sepByPipes">
+      <dt>Publicado em</dt> <dd><time itemprop="dateCreated" datetime="2017-12-05">05/12/2017</time></dd>
+      <dt>Edição</dt> <dd itemprop="issueNumber">
+          <span itemprop="identifier">229</span>, <label>Seção</label> <span>1</span>
+      </dd>
+      <dt>Página</dt>
+      <dd itemprop="pageStart">
+        <a href="http://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=05/12/2017&amp;jornal=515&amp;pagina=2">2</a>
+      </dd>
+    </dl>
+    <dl class="sepByPipes">
+     <dt>Esfera/Organização</dt> <dd content="http://wikidata.org/entity/Q155">federal</dd>
+       <!--  itemprop="legislationJurisdiction", semantica de prefixo LEX de legislationPassedBy -->
+     <dt>Autoridade/Subseção</dt>
+     <dd>Atos do
+        <span itemprop="legislationPassedBy" content="http://wikidata.org/entity/Q949699">Congresso Nacional</span>
+     </dd>
+    </dl>
   </nav>
-
 
   <header class="ParteInicial" id="inicio">
     <p class="par Preambulo"> Faço saber que o Congresso Nacional aprovou, e eu, Eunício Oliveira,
         Presidente do Senado Federal, nos termos do parágrafo único do art. 52 do Regimento Comum e
         do inciso XXVIII do art. 48 do Regimento Interno do Senado Federal, promulgo o seguinte</p>
 
-    <h2 class="Epigrafe" itemprop="http://schema.org/name">
+    <h2 class="Epigrafe" itemprop="name">
       <label itemprop="legislationType">DECRETO LEGISLATIVO</label>
       <span>Nº 173</span>, DE <time>2017</time><sup><a href="#foot1">(*)</a></sup>
     </h2>
@@ -59,12 +63,14 @@ Meta: **Nível 2**. Ilustrado por [Caso02](../../casos/caso02.md) e  [demo](http
 
   <footer id="fecho" class="ParteFinal">
     <div class="Assinatura" itemprop="legislationResponsible" itemscope itemtype="http://schema.org/Person">
-      <p itemprop="name" class="assina-dou">Senador EUNÍCIO OLIVEIRA</p>
-      <p itemprop="memberOf" class="cargo-dou">Presidente do Senado Federal</p>
+      <p class="assina-dou"><span itemprop="honorificPrefix">Senador</span> <span itemprop="name">EUNÍCIO OLIVEIRA</span></p>
+      <p class="cargo-dou"><span itemprop="jobTitle">Presidente</span> do
+        <span itemprop="affiliation" content="http://wikidata.org/entity/Q2119413">Senado Federal</span></p><!-- ou memberOf -->
     </div>
-    <div class="rodape" itemscope itemtype="http://schema.org/WPFooter">
+    <!-- https://jats.nlm.nih.gov/publishing/tag-library/1.2d1/element/fn.html  -->
+    <div itemprop="hasPart" class="rodape" itemscope itemtype="http://schema.org/WPFooter">
       <hr/>
-      <p id="foot1" itemprop="about"><label>(*)</label> O texto do Protocolo acima citado está publicado no <a href="http://legis.senado.leg.br/diarios/BuscaDiario?tipDiario=1&datDiario=17/10/2017&paginaDireta=38">Diário do Senado Federal de 17/10/2017</a>.</p>
+      <p id="foot1" itemprop="text"><label>(*)</label> O texto do Acordo acima citado está publicado no <a href="http://legis.senado.leg.br/diarios/BuscaDiario?tipDiario=1&datDiario=17/10/2017&paginaDireta=38">Diário do Senado Federal de 17/10/2017</a>.</p>
     </div>
   </footer>
 </article>
