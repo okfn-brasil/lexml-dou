@@ -86,7 +86,7 @@ h1,h2,h3,h4 {
   font-family: Arial;
 }
 
-header {  text-align: center;}
+header {  text-align: left;}
 header h1 {
   font-size:18pt;
   background-color: #E9E9E9;
