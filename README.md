@@ -24,7 +24,7 @@ Além deste problema principal, diversos problemas secundários podem ser enumer
 
 ![](subsidios/materia-simplif.png)
 
-O modelo de dados acima (diagrama UML de classes) assume uma visão simplificada dos dados para expressar a origem do PDF, do HTML e seus respectivos identificadores. 
+O modelo de dados acima (diagrama UML de classes) assume uma visão simplificada dos dados para expressar o DOU como composição, evidenciando os componentes responsáveis pelo PDF, pelo HTML e pelos seus respectivos identificadores.
 
 ## Princípios e propostas principais
 
