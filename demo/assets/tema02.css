@@ -44,11 +44,14 @@ article nav p label {
 /* etc */
 
 article header .Ementa {
-  width:80%;
+  width:70%;
+  color: #444;
   margin: 0 auto; /* to align */
   text-align: right;
   font-style: italic; /* melhor mudar de cor do que italicos*/
 }
+
+
 article header,
 article footer {
   padding-top:    2em;
@@ -92,9 +95,6 @@ header h1 {
   background-color: #E9E9E9;
 }
 
-header .ementa {
-	color: #444;
-}
 
 /* BODY BLOCK */
 
