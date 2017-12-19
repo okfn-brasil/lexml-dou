@@ -22,6 +22,10 @@ Além deste problema principal, diversos problemas secundários podem ser enumer
 
 6. ...
 
+![](subsidios/materia-simplif.png)
+
+O modelo de dados acima (diagrama UML de classes) assume uma visão simplificada dos dados para expressar a origem do PDF, do HTML e seus respectivos identificadores. 
+
 ## Princípios e propostas principais
 
 Não existe uma solução simples e direta, a implantação precisa ser gradual, e o custo ou mesmo viabilidade de implantação da solução envolve um contexto amplo que será aqui denominado de "informatização do setor".  Quanto maior o *[nível  de maturidade](https://en.wikipedia.org/wiki/Capability_Maturity_Model) na informatização*, maiores as chances de sucesso na implantação, e maior a viabilidade de uma solução mais ampla e complexa. Foram eleitos **5 níveis de maturidade**, e a cada nível uma DTD ([*Document Type Definition*](https://en.wikipedia.org/wiki/Document_type_definition)) mais exigente que a DTD do nível anterior:
