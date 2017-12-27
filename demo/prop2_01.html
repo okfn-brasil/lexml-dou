@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -14,6 +15,7 @@
   <br/>Área rosa: simula um <i>template frame</i>, que encapsula a matéria sem interferir na mesma (descartável). Idealmente não usar.
   <br/>Área branca:  conteúdo oficial, com bloco cinza de metadados complementares.
   <br/>Instruções para testar os metadados explícitos no conteúdo oficial e no bloco complementar:
+</p>
 <blockquote>
     1. Copie a URL deste página.
     <br/>2. Abra uma nova aba com a <b><a href="https://search.google.com/structured-data/testing-tool">ferramenta de teste semântico</a></b>
@@ -25,11 +27,9 @@
     1. use <tt>^U</tt> no teclado ou use o menu <i>Ferramentas/Código-fonte</i>
     <br/>2. procure pela tag <code>article</code>, o conteúdo oficial (o restante será descartado).
 </blockquote>
-</p>
 
 
-
-<article itemscope itemprop="Legislation" itemtype="http://schema.org/Legislation" xml:lang="pt-br">
+<article itemscope itemtype="http://schema.org/Legislation">
 
   <nav class="auditable-metadata"><!-- Metadados auditáveis-->
     <dl itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationIssue" class="sepByPipes">

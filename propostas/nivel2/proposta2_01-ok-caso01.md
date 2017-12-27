@@ -11,7 +11,7 @@ Decisão em uso:  enquanto não temos algo melhor, optando por deixar todas as m
 
 **Código**:
 ```html
-<article itemscope itemprop="Legislation" itemtype="http://schema.org/Legislation" xml:lang="pt-br">
+<article itemscope itemtype="http://schema.org/Legislation" lang="pt-br">
 
   <nav class="auditable-metadata"><!-- Metadados auditáveis-->
     <dl itemprop="isPartOf" itemscope itemtype="http://schema.org/PublicationIssue" class="sepByPipes">

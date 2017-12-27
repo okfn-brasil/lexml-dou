@@ -21,6 +21,14 @@ article  {
   background-color: #FFF;
 }
 
+article a[rel="tag"]:link,
+article a[rel="tag"]:visited,
+article a[rel="tag"]:active {
+  color:#534;
+}
+article a[rel="tag"]:hover{
+  color:#C55;
+}
 
 /* ## nav ## */
 
@@ -35,7 +43,9 @@ article nav {
 article nav p {
    padding:0; margin:3pt;
 }
-
+article nav div.nada {
+   padding:0; margin:0;
+}
 article nav p label {
    color: #534;
    font-family:Arial;
@@ -60,7 +70,7 @@ article footer {
 article footer {  /* * elements right; */
   text-align: center;
 }
-article footer .rodape {
+article footer .fn {  /* footnote */
   text-align: left;
 }
 
@@ -73,10 +83,9 @@ nav.auditable-metadata dd { display: inline; }
 
 nav.auditable-metadata dt:after { content: ":"; }
 
-dl.sepByPipes dt:not(:first-child):before  { content: "| "; }
-
-nav.auditable-metadata dd {margin:0; padding-right:4pt; font-family: Arial;}
 nav.auditable-metadata dt {margin:0; color:#333;}
+nav.auditable-metadata dd {margin:0; font-family: Arial; padding-right:1em;}
+dl.itemSep dt:not(:first-child):before  { content: "\002022"; padding-right:1em;}
 
 
 /* FRONT BLOCK */
